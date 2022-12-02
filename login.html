@@ -15,7 +15,7 @@
 
     function openLogout() {
 	if (window.name != 'hotspot_status') return true;
-        open('http://hs.smkmusaga.net/logout', 'hotspot_logout', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=280,height=250');
+        open('/logout', 'hotspot_logout', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=280,height=250');
 	window.close();
 	return false;
     }
@@ -31,7 +31,7 @@
                     <!--h1>Hi, IZIOY8!</h1-->
                                 
 
-                <form action="http://hs.smkmusaga.net/logout" name="logout" onSubmit="return openLogout()">
+                <form action="/logout" name="logout" onSubmit="return openLogout()">
                     <table>
                         <tr><td>IP address</td><td>192.168.111.253</td></tr>
                         <tr><td>Bytes up / down</td><td>3.4 MiB / 18.3 MiB</td></tr>
